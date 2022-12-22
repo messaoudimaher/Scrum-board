@@ -1,3 +1,3 @@
 ### Scrum backend
 
-Spring Boot app - Work in Progress
+Spring Boot  and PostgreSQL app 
