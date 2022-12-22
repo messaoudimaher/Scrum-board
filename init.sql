@@ -1,0 +1,3 @@
+CREATE USER postgres;
+CREATE DATABASE scrum;
+GRANT ALL PRIVILEGES ON DATABASE scrum TO postgres;
