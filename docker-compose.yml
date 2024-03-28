@@ -19,7 +19,7 @@ services:
     environment:
       - POSTGRES_DB=scrum
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=scrum
 
   #Back-end Spring Boot Application
   scrum-app:
@@ -30,10 +30,10 @@ services:
     #Environment variables for Spring Boot Application.
     environment:
       - URL=jdbc:postgresql://scrum-postgres/scrum
-      #- DB_SERVER=scrum-postgres
-      #- POSTGRES_DB=scrum
+      - DB_SERVER=scrum-postgres
+      - POSTGRES_DB=scrum
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=scrum
     ports:
       - 8080:8080 # Forward the exposed port 8080 on the container to port 8080 on the host machine
     links:
